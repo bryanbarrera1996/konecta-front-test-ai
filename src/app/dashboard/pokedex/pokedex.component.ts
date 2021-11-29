@@ -35,9 +35,13 @@ export class PokedexComponent implements OnInit {
     this.route.params.subscribe(params => {
       this.id = params['id'];
       const reg = new RegExp('^[0-9]+$');
-      
       if (this.id != undefined && !reg.test(this.id.toString())) {
         alert('Parametro invalido');
+        this.id = 6;
+      }
+
+      if (this.id < 0 || this.id > 898){
+        alert('Numero no permitido');
         this.id = 6;
       }
       this.pokemonIcon(this.id);
