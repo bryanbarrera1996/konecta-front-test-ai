@@ -1,0 +1,78 @@
+<header class="o-header-pokedex o-xl-header-pokedex">
+    <h1 class="o-text-header  o-s-text-header o-l-text-header o-xl-text-header"><img
+            class="o-img__logo o-s-img__logo o-l-img__logo o-xl-img__logo" src="assets/images/pokedex_icon.png" />
+        POKÉDEX</h1>
+</header>
+<main class="t-container t-s-container t-background-color">
+    <div class="o-container-size">
+        <div class="t-container-left t-s-container-left">
+            <div class="o-title-pokemon o-s-title-pokemon o-xl-title-pokemon">
+                <div class="o-text-center">
+                    <button class="o-circle-button">
+                                < 
+                    </button>
+                            <p>
+                                <img class="o-img__fire o-xl-img__fire" [src]="icon" alt="Fire" />
+                                &nbsp;{{name}}
+                            </p>
+                            <button class="o-circle-button"> > </button>
+                </div>
+            </div>
+            <div class="o-container-pokemon">
+                <div class="o-center-image o-s-center-image">
+                    <img class="o-img-container-pokemon o-s-img-container-pokemon" alt="Charizard" [src]="artwork" />
+                </div>
+            </div>
+        </div>
+        <div class="t-container-right t-s-container-right">
+            <div class="o-info-pokemon o-text-container o-s-info-pokemon o-s-text-container">
+                <div class="o-s-text o-text o-xl-text">
+                    <h4>NO.</h4>
+                    <p class="o-text-info">{{id}}</p>
+                </div>
+                <div class="o-s-text o-text o-xl-text">
+                    <h4>BASE EXPERIENCE.</h4>
+                    <p class="o-text-info o-xl-text">{{base_experience}}</p>
+                </div>
+                <div class="o-s-text o-text o-xl-text">
+                    <h4>TYPE.</h4>
+                    <p class="o-text-info" *ngFor="let item of types ">{{item}}</p>
+
+                </div>
+                <div class="o-s-text o-text o-xl-text">
+                    <h4>HEIGHT.</h4>
+                    <p class="o-text-info">{{height}}m</p>
+                </div>
+                <div class="o-s-text o-text o-xl-text">
+                    <h4>WEIGHT.</h4>
+                    <p class="o-text-info">{{(weight)}} Kg</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="o-footer-left o-s-footer-left">
+        <div class="o-footer-other o-s-footer-other">
+            <p>OTHERS</p>
+        </div>
+    </div>
+    <div class="o-footer-right o-s-footer-right">
+        <div class="o-footer-content-pokebox">
+            <div title="Pokemon 1" class="o-footer-pokebox o-s-footer-pokebox">
+                <img class="o-img-footer-pokebox o-s-img-footer-pokebox" (click)="loadPokemon(1)" [src]="poke1" />
+            </div>
+            <div title="Pokemon 2" class="o-footer-pokebox o-s-footer-pokebox">
+                <img class="o-img-footer-pokebox o-s-img-footer-pokebox" (click)="loadPokemon(2)" [src]="poke2" />
+            </div>
+
+            <div title="Pokemon 4" class="o-footer-pokebox o-s-footer-pokebox">
+                <img class="o-img-footer-pokebox o-s-img-footer-pokebox" (click)="loadPokemon(3)" [src]="poke3" />
+            </div>
+
+            <div title="Pokemon 5" class="o-footer-pokebox o-s-footer-pokebox">
+                <img class="o-img-footer-pokebox o-s-img-footer-pokebox" (click)="loadPokemon(4)" [src]="poke4" />
+            </div>
+        </div>
+    </div>
+</footer>

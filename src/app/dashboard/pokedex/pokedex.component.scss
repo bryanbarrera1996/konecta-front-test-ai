@@ -1,0 +1,365 @@
+@import './../../../assets/css/variables.scss';
+
+.o-header-pokedex {
+    display: flex;
+    background-color: $poke-red;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    color: $poke-white;
+    height: 3.5rem;
+    align-items: center;
+    width: 100%;
+}
+
+.o-container-size {
+    display: flex;
+    position: relative;
+}
+
+.t-background-color {
+    background: rgb(188, 188, 188);
+    background: linear-gradient(99deg, rgba(188, 188, 188, 1) 46%, rgba(162, 162, 162, 1) 57%);
+}
+
+.o-title-pokemon p {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.o-text-center {
+    display: flex;
+    align-items: center;
+    text-transform:uppercase;
+    width: 93%;
+}
+
+.o-text-info{
+    text-transform:uppercase;
+}
+
+.o-img__fire {
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+}
+
+.o-title-pokemon {
+    background-color: $poke-gray;
+    border-radius: 6px;
+    width: 70%;
+    padding-left: 20px;
+    margin: auto;
+    color: $poke-white;
+}
+
+.o-center-image {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.o-img-container-pokemon {
+    width: 95%;
+    height: 95%;
+}
+
+.o-container-pokemon {
+    margin: auto;
+}
+
+.o-text-container {
+    width: 100%;
+}
+
+.o-circle-button{
+    border-radius: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Extra small smartphone */
+
+@media only screen and (max-width: 600px) {
+    .t-container {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .o-container-size {
+        flex-wrap: wrap;
+    }
+    .o-s-text-container {
+        width: 93%;
+    }
+    .o-s-text-header {
+        font-size: 6vw;
+        margin: auto;
+    }
+    .o-s-img__logo {
+        width: 8vw;
+        height: 8vw;
+        vertical-align: middle;
+    }
+    .t-s-container-left {
+        padding-top: 10px;
+    }
+    .t-s-container-right {
+        padding-top: 10px;
+        width: 90%;
+        margin: auto;
+    }
+    .o-s-title-pokemon {
+        background-color: $poke-gray;
+        border-radius: 6px;
+        color: $poke-white;
+        width: 90%;
+        margin: auto;
+    }
+    .o-s-center-image {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10vw;
+    }
+    .o-s-text {
+        display: flex;
+    }
+    .o-s-info-pokemon {
+        background-color: $poke-blue;
+        color: $poke-white;
+        border-radius: 6px;
+        padding-left: 20px;
+        height: 100%;
+        p{
+            color: $poke-black; 
+        }
+    }
+    .o-s-text-container p {
+        font-size: 5vw;
+        padding-left: 20px;
+    }
+    footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        background-color: $poke-red;
+        text-align: center;
+        display: block;
+        border-bottom-right-radius: 9px;
+        border-bottom-left-radius: 9px;
+        height: 30vw;
+    }
+    .o-s-footer-left {
+        display: flex;
+        position: relative;
+        width: 100%;
+        float: left;
+    }
+    .o-s-footer-right {
+        display: flex;
+        position: relative;
+        width: 100%;
+        float: left;
+    }
+    .o-s-footer-other {
+        text-align: center;
+        vertical-align: middle;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 4vw;
+        color: $poke-white;
+        font-weight: bold;
+    }
+    .o-s-footer-pokebox {
+        width: 14vw;
+        height: 14vw;
+        background-color: $poke-white;
+        border-radius: 9px;
+        float: left;
+        position: relative;
+        margin-left: 8vw;
+    }
+    .o-s-footer-pokebox :hover {
+        width: 14vw;
+        height: 14vw;
+        border-radius: 9px;
+        cursor: pointer;
+        background-color: $poke-red;
+    }
+    .o-s-img-footer-pokebox {
+        width: auto;
+        height: 10vw;
+        padding-top: 6px;
+    }
+}
+
+
+/************************************************************************************************/
+
+
+/* Size por Tablets or laptops*/
+
+@media only screen and (min-width: 600px) {
+    .o-img__logo {
+        width: 5vw;
+        height: 5vw;
+        vertical-align: middle;
+    }
+    .o-text-header {
+        justify-content: left;
+        padding-left: 1rem;
+        font-size: 3vw;
+    }
+    .t-container {
+        width: 100%;
+    }
+    .t-container-right {
+        padding-left: 10px;
+        margin-left: 10px;
+        padding-top: 10px;
+        float: left;
+        position: relative;
+        width: 45%;
+        height: auto;
+    }
+    .t-container-left {
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-left: 57px;
+        float: left;
+        position: relative;
+        width: 45%;
+        height: auto;
+    }
+    .o-info-pokemon {
+        background-color: $poke-blue;
+        color: $poke-white;
+        border-radius: 6px;
+        width: 90%;
+        padding-left: 20px;
+        height: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+        p{
+            color: $poke-black; 
+        }
+    }
+    .o-text {
+        width: 45%;
+    }
+    footer {
+        position: relative;
+        bottom: 0;
+        background-color: $poke-red;
+        text-align: center;
+        display: flex;
+        border-bottom-right-radius: 9px;
+        border-bottom-left-radius: 9px;
+        width: 100%;
+        height: 11vw;
+    }
+    .o-footer-other {
+        text-align: center;
+        vertical-align: middle;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 3vw;
+    }
+    .o-footer-left {
+        display: flex;
+        position: relative;
+        width: 45%;
+        float: left;
+    }
+    .o-footer-right {
+        display: flex;
+        position: relative;
+        width: 100%;
+        float: left;
+        padding-top: 10px;
+    }
+    .o-text-footer {
+        font-size: 37px;
+    }
+    .o-footer-content-pokebox {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .o-img-footer-pokebox {
+        width: 6vw;
+        height: 6vw;
+        padding-top: 6px;
+    }
+    .o-footer-pokebox {
+        width: 8vw;
+        height: 8vw;
+        background-color: $poke-white;
+        border-radius: 9px;
+        float: left;
+        position: relative;
+        margin-left: 7vw;
+    }
+    .o-footer-pokebox :hover {
+        width: 8vw;
+        height: 8vw;
+        border-radius: 9px;
+        cursor: pointer;
+        background-color: $poke-red;
+    }
+}
+
+
+/* Large laptops*/
+
+@media only screen and (min-width: 992px) {
+    .o-l-img__logo {
+        width: 4vw;
+        height: 4vw;
+        vertical-align: middle;
+    }
+    .o-l-text-header {
+        justify-content: left;
+        padding-left: 1rem;
+        font-size: 2.5vw;
+    }
+}
+
+
+/* Large desktops*/
+
+@media only screen and (min-width: 1200px) {
+    .o-xl-text-header {
+        justify-content: left;
+        padding-left: 1rem;
+        font-size: 2vw;
+    }
+    .o-xl-img__logo {
+        width: 3vw;
+        height: 3vw;
+        vertical-align: middle;
+    }
+    .o-xl-text {
+        font-size: 2vw;
+    }
+}
+
+
+/*Screen in 4k*/
+
+@media only screen and (min-width: 2180px) {
+    .o-xl-header-pokedex {
+        height: 4vw;
+    }
+    .o-xl-title-pokemon p {
+        font-size: 2vw;
+        font-weight: bold;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .o-xl-img__fire {
+        width: 3vw;
+        height: 3vw;
+    }
+}
