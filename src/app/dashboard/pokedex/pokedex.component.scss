@@ -79,6 +79,67 @@
     cursor: pointer;
 }
 
+/*Boton flotante*/
+.o-content-button{
+    width:90px;
+    height:240px;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+  }
+  .o-float-button{
+    width:60px;
+    height:60px;
+    border-radius:100%;
+    background:$poke-red;
+    right:0;
+    bottom:0;
+    position:absolute;
+    margin-right:16px;
+    margin-bottom:16px;
+    border:none;
+    outline:none;
+    color:$poke-white;
+    font-size:36px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition:.3s;  
+  }
+  span{
+    transition:.5s;  
+  }
+  .o-float-button:hover span{
+    transform:rotate(360deg);
+  }
+  .o-float-button:active{
+    transform:scale(1.4);
+  }
+/*Fin boton flotante*/
+
+/* Input buscar*/
+.o-container-search{
+    display: flex;
+    height: 2.5rem;
+    
+}
+.hide{
+    display: none;
+}
+.o-search-bar{
+    margin: 0vw 6vw;
+    width: 80%;
+    height: 2rem;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #D0CFCE;
+    outline: none;
+    &:focus{
+      border: 1px solid $poke-blue;
+      transition: 0.35s ease;
+      color: $poke-blue;
+     }
+   }
+/*Fin input buscar*/
+
 /* Extra small smartphone */
 
 @media only screen and (max-width: 600px) {
